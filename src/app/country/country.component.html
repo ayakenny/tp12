@@ -1,0 +1,11 @@
+<div class="countrySearch">
+    <p>Entrer le nom d'un pays</p>
+    
+    <label for="country">Pays : </label>
+    <input id="country" type="text" #input (blur)="onBlur()" (focus)="onFocus()" />
+    <ul *ngIf="currentCountries.length > 0" class="result">
+        <li *ngFor="let country of currentCountries" (click)="selectCountry($event)"> 
+            {{ country.libelle }}
+        </li>
+    </ul>
+</div>

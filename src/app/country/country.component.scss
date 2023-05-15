@@ -1,0 +1,19 @@
+.countrySearch {
+    margin: 0;
+    padding: 2%;
+    padding-top: 1%;
+    width: 15%;
+    border-style: solid;
+
+    position: relative;
+}
+
+.result {
+    width: 40%;
+    list-style-type: none;
+    border-style: solid;
+
+    position: absolute;
+    left: 20%;
+    bottom: -3%;
+}
